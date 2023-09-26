@@ -28,3 +28,46 @@ header {
 .container aside {
     width : 20%; 
 }
+
+.moving_square {
+    width: 100px; 
+    height : 100px; 
+    background-color: red;
+    position : relative;
+    animation: moveSquare;
+    animation-duration : 5s; 
+    animation-iteration-count: 5;
+}
+
+@keyframes moveSquare {
+
+    0% {
+        top : 0; 
+        left : 0; 
+        background-color : red
+    }
+
+    25% {
+        top : 300px;
+        left : 0px;
+        background-color: green;
+    }
+
+    50% {
+        top: 300px;
+        left : 300px;
+        background-color: blue;
+    }
+
+    75% {
+        top: 0px;
+        left : 300px;
+        background-color: yellow;
+    }
+
+    100% {
+        top : 0; 
+        left : 0; 
+        background-color: red;
+    }
+}
