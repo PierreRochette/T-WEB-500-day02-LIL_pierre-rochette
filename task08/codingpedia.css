@@ -1,0 +1,30 @@
+body {
+    background-color: grey;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+}
+
+.box {
+    border : solid black 2px;
+    padding-left : 10px;
+    padding-right: 10px;
+    margin: 10px;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container main {
+    width : 80%; 
+}
+
+.container aside {
+    width : 20%; 
+}
